@@ -28,7 +28,7 @@ class A2C(Agent):
                  optimizer_type="rmsprop", entropy_reg=0.01,
                  max_grad_norm=0.5, batch_size=100, episodes_before_train=100,
                  epsilon_start=0.9, epsilon_end=0.01, epsilon_decay=200,
-                 use_cuda=True):
+                 use_cuda=False):
         super(A2C, self).__init__(env, state_dim, action_dim,
                  memory_capacity, max_steps,
                  reward_gamma, reward_scale, done_penalty,

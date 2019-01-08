@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-MAX_EPISODES = 5000
+MAX_EPISODES = 500
 EPISODES_BEFORE_TRAIN = 0
 EVAL_EPISODES = 10
 EVAL_INTERVAL = 100
@@ -82,6 +82,7 @@ def run(env_id="CartPole-v0"):
     plt.ylabel("Average Reward")
     plt.legend(["A2C"])
     plt.savefig("./output/%s_a2c.png"%env_id)
+    plt.show()
 
 
 if __name__ == "__main__":
